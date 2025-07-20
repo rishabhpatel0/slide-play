@@ -1,0 +1,104 @@
+.bottom-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1c1c1c;
+  border-radius: 32px 32px 0 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  color: white;
+  touch-action: none;
+}
+
+
+.bottom-sheet.collapsed {
+  height: 150px;
+}
+
+.bottom-sheet.half {
+  height: 30vh;
+}
+
+.bottom-sheet.full {
+  height: 100vh;
+}
+
+.drag-handle {
+  width: 40px;
+  height: 5px;
+  background: #555;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.sheet-content {
+  padding: 16px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.album-cover {
+ /* width: 100px;
+  height: 100px;*/
+  border-radius: 12px;
+}
+
+.lyrics {
+  margin-top: 24px;
+  padding: 12px 16px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #e0e0e0;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  max-height: 40vh;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.album-cover img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.progress-container {
+  height: 6px;
+  background-color: #444;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #1db954; 
+  transition: width 1s ease;
+}
+.song-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #222;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+}
+
+.song-details h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.song-details p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
